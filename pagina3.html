@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pagina3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Reserva tu hora</h1>
+        <a href="C:\Users\Admin\Desktop\Ejercicios curso Java/index.html">Volver a la pagina inicial</a>
+
+    </header>
+    <div id="after_submit"></div>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        <div class="row">
+            <label class="required" for="nombre"> Tu Nombre:</label><br />
+            <input id="nombre" class="input" name="nombre" type="text" value="" size="30" /><br />
+            <span id="nombre_validacion" class="error_mensaje"></span>
+        </div>
+        <div class="row">
+            <label class="required" for="telefono"> Tu telefono:</label><br />
+            <input id="telefono" class="input" name="telefono" type="text" value="" size="30" /><br />
+            <span id="telefono_validacion" class="error_mensaje"></span>
+        </div>
+
+        <div>
+            <input type="radio" name="boton"> Hombre<br>
+            <input type="radio" name="boton"> Mujer
+        </div>
+        <div class="row">
+            <label class="required" for="email">Tu email:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+            <span id="email_validacion" class="error_mensaje"></span>
+        </div>
+        <p>
+            <label for="metodo de locomocion">Region:</label>
+            <select name="metodo de locomocion" id="metodo de locomocion">
+                <option>Metropolitana</option>
+                <option>Region I</option>
+                <option>RegionII</option>
+                <option>RegionIII</option>
+                <option>RegionIV</option>
+                <option>RegionV</option>
+                <option>RegionVI</option>
+                <option>RegionVII</option>
+                <option>RegionVIII</option>
+                <option>RegionIX</option>
+                <option>RegionX</option>
+                <option>RegionXI</option>
+                <option>RegionXII</option>
+                <option>RegionXIII</option>
+                <option>RegionXIV</option>
+                <option>RegionCV</option>
+                <option>RegionXVI</option>
+            </select>
+        </p>
+        <div class="row">
+            <label class="required" for="mensaje">Tu mensaje:</label><br />
+            <textarea id="mensaje" class="input" name="mensaje" rows="7" cols="30"></textarea><br />
+            <span id="mensaje_validacion" class="error_mensaje"></span>
+        </div>
+
+        <input id="submit_button" type="submit" value="Enviar email" />
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+
+
+
+</html>
